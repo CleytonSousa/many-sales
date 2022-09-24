@@ -1,6 +1,6 @@
 package br.com.manysales.productapi.services;
 
-import br.com.manysales.productapi.config.exception.AuthException;
+import br.com.manysales.config.exception.AuthException;
 import br.com.manysales.productapi.entities.DTO.JWT.JwtResponse;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

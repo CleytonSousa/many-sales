@@ -1,4 +1,4 @@
-package br.com.manysales.productapi.config.interceptor;
+package br.com.manysales.config.interceptor;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
