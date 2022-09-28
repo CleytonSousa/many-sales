@@ -1,4 +1,4 @@
-package br.com.manysales.config.interceptor;
+package br.com.manysales.productapi.config.interceptor;
 
 import br.com.manysales.productapi.services.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;

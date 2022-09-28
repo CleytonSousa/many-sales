@@ -1,4 +1,4 @@
-package br.com.manysales.config.exception;
+package br.com.manysales.productapi.config.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

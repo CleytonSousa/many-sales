@@ -1,7 +1,7 @@
 package br.com.manysales.productapi.services;
 
-import br.com.manysales.config.exception.SucessResponse;
-import br.com.manysales.config.exception.ValidationException;
+import br.com.manysales.productapi.config.exception.SucessResponse;
+import br.com.manysales.productapi.config.exception.ValidationException;
 import br.com.manysales.productapi.entities.DTO.supplier.SupplierRequest;
 import br.com.manysales.productapi.entities.DTO.supplier.SupplierResponse;
 import br.com.manysales.productapi.entities.Supplier;

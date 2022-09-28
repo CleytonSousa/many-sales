@@ -1,8 +1,10 @@
 package br.com.manysales.productapi.services;
 
-import br.com.manysales.config.exception.SucessResponse;
-import br.com.manysales.config.exception.ValidationException;
+import br.com.manysales.productapi.config.exception.SucessResponse;
+import br.com.manysales.productapi.config.exception.ValidationException;
 import br.com.manysales.productapi.entities.Category;
+import br.com.manysales.productapi.entities.DTO.ProductQuantityDTO;
+import br.com.manysales.productapi.entities.DTO.ProductStockDTO;
 import br.com.manysales.productapi.entities.DTO.product.ProductRequest;
 import br.com.manysales.productapi.entities.DTO.product.ProductResponse;
 import br.com.manysales.productapi.entities.Product;
@@ -99,6 +101,10 @@ public class ProductServices {
         this.validateInformedId(id);
         productRepository.deleteById(id);
         return SucessResponse.create("Product deleted");
+    }
+
+    public void updateProductStock(ProductStockDTO productStockDTO){
+
     }
 
     public void validateInformedId(Integer id){

@@ -1,6 +1,6 @@
 package br.com.manysales.productapi.controllers;
 
-import br.com.manysales.config.exception.SucessResponse;
+import br.com.manysales.productapi.config.exception.SucessResponse;
 import br.com.manysales.productapi.entities.DTO.product.ProductRequest;
 import br.com.manysales.productapi.entities.DTO.product.ProductResponse;
 import br.com.manysales.productapi.services.ProductServices;

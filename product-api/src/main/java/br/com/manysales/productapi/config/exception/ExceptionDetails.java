@@ -1,4 +1,4 @@
-package br.com.manysales.config.exception;
+package br.com.manysales.productapi.config.exception;
 
 import lombok.Getter;
 import lombok.Setter;

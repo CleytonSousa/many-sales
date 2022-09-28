@@ -1,4 +1,4 @@
-package br.com.manysales.config.exception;
+package br.com.manysales.productapi.config.exception;
 
 public class AuthException extends RuntimeException {
 
