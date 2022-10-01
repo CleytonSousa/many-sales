@@ -1,8 +1,11 @@
 package br.com.manysales.productapi.controllers;
 
 import br.com.manysales.productapi.config.exception.SucessResponse;
+import br.com.manysales.productapi.entities.DTO.ProductCheckStockRequest;
+import br.com.manysales.productapi.entities.DTO.ProductStockDTO;
 import br.com.manysales.productapi.entities.DTO.product.ProductRequest;
 import br.com.manysales.productapi.entities.DTO.product.ProductResponse;
+import br.com.manysales.productapi.entities.DTO.product.ProductSalesResponse;
 import br.com.manysales.productapi.services.ProductServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -62,5 +65,15 @@ public class ProductController {
     @GetMapping("/supplier/{supplierId}")
     public List<ProductResponse> findBySupplierId(@PathVariable Integer supplierId){
         return productServices.findBySupplierId(supplierId);
+    }
+
+    @PostMapping("/check-stock")
+    public SucessResponse checkProductStock(@RequestBody ProductCheckStockRequest productStockDTO){
+        return productServices.checkProductStock(productStockDTO);
+    }
+
+    @GetMapping("{productId}/sales")
+    public ProductSalesResponse findProductSales(@PathVariable Integer productId){
+        return productServices.findProductSales(productId);
     }
 }

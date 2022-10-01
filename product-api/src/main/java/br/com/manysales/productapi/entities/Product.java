@@ -51,6 +51,10 @@ public class Product {
         createdAt = LocalDateTime.now();
     }
 
+    public void updateStock(Integer quantity) {
+        this.quantityAvailable = quantityAvailable - quantity;
+    }
+
     public static Product of(ProductRequest request, Supplier supplier, Category category){
         return Product.builder()
                 .name(request.getName())
