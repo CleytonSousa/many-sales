@@ -6,8 +6,6 @@ import br.com.manysales.productapi.entities.Category;
 import br.com.manysales.productapi.entities.DTO.category.CategoryRequest;
 import br.com.manysales.productapi.entities.DTO.category.CategoryResponse;
 import br.com.manysales.productapi.repositories.CategoryRepository;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;

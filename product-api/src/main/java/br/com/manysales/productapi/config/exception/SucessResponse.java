@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter @Setter
 @Builder
 public class SucessResponse {
 
